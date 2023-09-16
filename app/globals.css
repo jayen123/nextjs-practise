@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.hero_bg{
+    @apply bg-[url('./Image/hero.jpg')] bg-no-repeat bg-center bg-cover w-full h-screen max-h-[930px]
+}
