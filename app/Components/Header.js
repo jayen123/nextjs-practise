@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import {SiNextdotjs} from 'react-icons/si'
+import Image from 'next/image'
+import Logo from '../Image/logo.png'
 const Header = () => {
   return (
     <>
@@ -8,9 +9,7 @@ const Header = () => {
             <div className='flex justify-between items-center py-5'>
                 <div>
                     <Link href='/'>
-                        <h2 className='text-4xl text-blue-600'>
-                          <SiNextdotjs/>
-                        </h2>
+                        <Image src={Logo} alt='logo' />
                     </Link>
                 </div>
                 <div className='flex gap-5 text-xl text-blue-500 font-semibold'>
