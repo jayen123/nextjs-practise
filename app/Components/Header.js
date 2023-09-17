@@ -1,25 +1,34 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '../Image/logo.png'
 const Header = () => {
   return (
     <>
-            <nav className='flex justify-between items-center py-5'>
-                <div>
-                    <Link href='/'>
-                        <Image src={Logo} alt='logo' />
-                    </Link>
-                </div>
-                <div className='flex gap-5 text-xl text-blue-500 font-semibold'>
-                    <Link href='/' >Home</Link>
-                    <Link href='/Story' >Story</Link>
-                    <Link href='/Service' >Service</Link>
-                    <Link href='/Work' >Work</Link>
-                    <Link href='/Career' >Career</Link>
-                    <Link href='/Contact' >Contact</Link>
-                </div>
-            </nav>
+            <div className='absolute w-full py-4'>
+                <nav className='flex items-center justify-between px-4 sm:px-6 lg:px-8 '>
+                  <div>
+                      <Link href='/'>
+                      <Image 
+                        src="/next.svg"
+                        alt='vercel-logo'
+                        width={100}
+                        height={24}
+                      />
+                      </Link>
+                  </div>
+                  <div>
+                      <ul className='flex gap-5'>
+                      <li className='nav_link'><Link href='/' >Home</Link></li>
+                      <li className='nav_link'><Link href='/Story' >Story</Link></li>
+                      <li className='nav_link'><Link href='/Service' >Service</Link></li>
+                      <li className='nav_link'><Link href='/Work' >Work</Link></li>
+                      <li className='nav_link'><Link href='/Career' >Career</Link></li>
+                      <li className='nav_link'><Link href='/Contact' >Contact</Link></li>
+                      </ul>
+                      
+                  </div>
+                </nav>
+            </div>
     </>
   )
 }

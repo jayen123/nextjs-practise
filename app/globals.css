@@ -3,5 +3,12 @@
 @tailwind utilities;
 
 .hero_bg{
-    @apply bg-[url('./Image/hero.jpg')] bg-no-repeat bg-center bg-cover w-full h-screen max-h-[930px]
+    @apply bg-[url('./Image/hero.jpg')] bg-no-repeat bg-center bg-cover h-screen max-h-[930px]
 }
+.nav_link{
+    @apply text-white text-sm 
+}
+.btn{
+     @apply before:content-[attr(before)] before:absolute before:bg-blue-500 after:flex after:bg-blue-300
+}
+
